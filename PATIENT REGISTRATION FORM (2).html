@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UpendoHospital.com</title>
+        <style>
+            body{
+                text-align:center;
+                }
+            table, form{
+                margin: 50px 300px;
+                width: 60%;  
+                border: solid;
+                border-collapse: collapse;
+                text-align:center;
+                }
+                td{
+                    border:solid;
+                    padding:2px;
+                    }
+                    th{
+                        font-size:25px;
+                        padding:20px;
+                        }
+                        input,textarea{
+                            width:70%;
+                            padding:10px;
+                            border-style:none;
+                            border-radius:50px;
+                            border-bottom:1px groove grey;
+                            font-size:15px;
+                            text-align:center;
+                            }
+                            .submit{
+                                background-color:#B3DAFF;
+                                color:black;
+                                margin:5px 180px;
+                                font-size:25px;
+                                padding:25px;
+                                width:30%;
+                                }
+                                footer{
+                                    padding:50px;
+                                    text-align:center;
+                                    }
+                                    .intro{
+                                        font-size:20px;
+                                        font-style:italic;
+                                        }
+                                        h1{
+                                            font-size:50px
+                                            }
+                                            label{
+                                                font-size:20px;
+                                                }
+               
+        </style>
+        
+	</head>
+	<body>
+		<h1>UPENDO HOSPITAL</h1>
+	<p class="intro">
+		Welcome to Upendo Hospital, where your health matters. <br>
+		Kindly fill the form below, so that you can be part of our <br>
+		community.
+	</p>
+		<h2> <u>Registration of a Patient</u></h2>
+        <table >
+           
+       
+		<form action="/action_page.php " method="post" >
+            <tr>
+          <th colspan = "3"> Patient's Personal Information </th>
+
+           </tr>
+           
+            <tr>
+			<b>
+			<td> <label for="name">Name:</label> </td>
+			  <td colspan="2"> <p><input type="text" id="name" name="NAME"  required>  </p> </td>
+			</tr> 
+
+            <tr>
+			<td><label for="DateOfBirth">Date Of Birth:</label> </td>
+			<td colspan="2"> <p> <input type="date" id="DateOfBirth" name="DOB"  required>  </p> </td>
+			</tr>
+
+            <tr> 
+			<td><label for="Age">Age:</label>  </td>
+		   <td colspan="2">  <p> <input type="number" id="Age" name="AGE" required> </p> </td>  
+		   </tr>
+
+           <tr>
+		   <td> <label for="Weight">Weight:</label> </td>
+		  <td>  <p> <input type="number" id="Weight" name="WEIGHT" required > </p> </td>  
+		  <td> <i>
+		   <select id="Weight">
+		     <option>Kg</option>
+		     <option>Pounds</option>
+		   </select> <br> <br>
+		   </i> </td>
+		  </tr>
+
+          <tr>
+		   <td>Gender:<br></td>
+		   <i>
+		  <td> <p> <input type="radio" id="male" name="Gender">
+		    <label for="male">Male</label>  </p></td> 
+		    
+		  <td>  <input type="radio" id="female" name="Gender">
+		    <label for="female">Female</label>  </td>
+		   </i>
+		    </tr>
+
+            <tr>
+		   <td> <label for="IDnumber">ID Number:</label> <br> </td>
+		  <td colspan="2"> <p> <input type="number" id="IDnumber" name="ID NUMBER" maxlength="9" required> </p> </td>
+		    </tr>
+
+            <tr>
+		   <td> <label for="PatientID">Patient ID:</label> <br> </td>
+		   <td colspan="2">  <p> <input type="text" id="PatientID" name="PATIENT ID" required>  </p> </td>
+		    </tr>
+
+            <tr>
+		   <td> <label for="PhoneNumber">Phone Number:</label>  </td>
+		   <td colspan="2"> <p> <input type="text" maxlength="10" id=" PhoneNumber" name="PHONE NUMBER" required> </p> </td>
+		    </tr>
+
+            <tr>
+		  <td> <label for="HealthStatus">Health Status:</label> <br> </td>
+		   <td colspan="2">  <p><textarea id="HealthStatus" name="HEALTH STATUS"></textarea>  </p> </td>
+		    </tr>
+
+            <tr>
+		   <td><label for="Address">Address:</label> <br> </td> 
+		   <td colspan="2">  <p> <input type="text" id="Address" name="ADDRESS" required>  </p></td> 
+		    </tr>
+
+            <tr>
+		<td> Marital Status: <br> </td>
+		    <i>
+		   <td>  <p> <input type="radio" id="Single" name="Marital Status"> 
+		  <label for="Single">Single</label>  </p> </td> 
+			<td> <input type="radio" id="Married" name="Marital Status"> 
+			 <label for="Married">Married</label>  </td> 
+			</i>
+			</tr>
+
+            <tr>
+		<td> <label for="NextOfKin" >Next of KIN: </label><br> </td>
+		<td colspan="2">  <p> <textarea  id="NextOfKin" name="NEXT OF KIN" width="30"></textarea>  </p> </td>
+		 	</tr>
+	
+        
+		</form>
+        
+            </table> <br>
+            
+         <input class="submit" type="Submit" value="SUBMIT" 
+					onclick="alert ('Thank you for filling the Form. The Form is being Submitted.')">
+         <footer>          
+		<p><br>
+		Thank you for visiting our website. <br>
+	   <h5><b>Upendo Hospital</b> @copyright 2026. </h5> 
+		</p>
+        </footer> 
+	</body>
+</html>
